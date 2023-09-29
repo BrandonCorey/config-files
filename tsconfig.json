@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2015", // transpile to ES6
+    "module": "commonjs",
+    "strict": true, // exhaustive type checking
+    "outDir": "./dist", // output to `dir` directory
+    "noEmitOnError": true, // Stops from transpiling JS if error
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./src/**/*"], // compile all files inside src
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Recommended"
+}
