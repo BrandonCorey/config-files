@@ -14,7 +14,7 @@
         "jest": true,
         "jquery": true,
         "node": true
-    },
+  },
     "extends": [
         "eslint:recommended"
     ],
@@ -81,6 +81,14 @@
                 "ignoreTrailingComments": true,
                 "ignoreUrls": true
             }
+        ],
+        "max-lines-per-function": [
+          "error",
+          {
+            "max": 30,
+            "skipBlankLines": true,
+            "skipComments": true
+          }
         ],
         "max-nested-callbacks": [
             "error",
