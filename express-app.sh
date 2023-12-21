@@ -24,7 +24,7 @@ then
 
   # adds a "start" command to package.json "script" object with value of "nodemon app.js"
   APP_MAIN=$(grep -Eo '"main":.*?[^\\]",?' package.json | sed 's/"main": "\(.*\)",/\1/')
-  npm set-script start "npx nodemon $APP_MAIN"
+  npm set-script dev "npx nodemon $APP_MAIN"
   npm set-script kill "pkill -f ."
   # code here
 
