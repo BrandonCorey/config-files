@@ -133,8 +133,10 @@ alias rb="$HOME/.rbenv/shims/ruby"
 alias nv='/usr/local/bin/nvim'
 
 # Setting up nvm
-export PATH=$HOME/.nvm/versions/node/v20.7.0/lib/bin/:$PATH # this is for globally installed npm packages for any version
-# export NODE_VERSION=$(nvm current) # This is a global variable that grabs our current node version; used for next line below
+export NODE_VERSION=$(nvm current) # This is a global variable that grabs our current node version; used for next line below
+# export PATH=$HOME/.nvm/versions/node/v20.7.0/lib/bin/:$PATH # this is for globally installed npm packages for any version
+export PATH="$HOME/.nvm/versions/node/$NODE_VERSION/lib/bin/:$PATH"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
