@@ -7,9 +7,13 @@
     "noEmitOnError": true, // Stops from transpiling JS if error
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true
   },
-  "include": ["./src/**/*"], // compile all files inside src (change to ./ if typescript code is in root, even for linter)
+  "include": ["./src/**/*"], // compile all files inside src
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Recommended"
 }
